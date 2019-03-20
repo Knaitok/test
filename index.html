@@ -13,7 +13,7 @@
      <h1>Веб-форма</h1>   
     </div>
     <div class="container"> 
-        <form>
+        <form action = "academy.php" method="post">
         <hr/ class="line">
     <div class="form-group row">
       <label for ="FIO" class = "col-sm-2 col-form-label">ФИО</label>
@@ -52,10 +52,11 @@
             <textarea rows ="5" id="comment" class="form-control" placeholder="Введите Комментарий"></textarea>
         </div>
     </div>
-    <div class=" row justify-content-center g-recaptcha form-group " data-sitekey="6Lfw55gUAAAAAPP3GHEFuISD-gz-v7528rs0hdMT"></div>
-    <div class ="row justify-content-center">
-        <button type="submit" class=" btn btn-primary col-sm-2 col-form-label" click ="">Отправить</button>
+    <div class = "row justify-content-center  form-group">
+        <div class ="g-recaptcha" data-sitekey="6Lfw55gUAAAAAPP3GHEFuISD-gz-v7528rs0hdMT"></div>
+        <button type="submit" class=" btn btn-primary col-sm-2 col-form-label">Отправить</button>
     </div>
+    
 </form>
 </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
