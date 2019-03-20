@@ -1,0 +1,64 @@
+<! DOCTYPE html>
+<html lang ="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Форма</title>
+    <link rel="stylesheet" href="bootstrap4/css/bootstrap.min.css">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+<body>
+    <div class="container-flied text-center"> 
+     <h1>Веб-форма</h1>   
+    </div>
+    <div class="container"> 
+        <form>
+        <hr/ class="line">
+    <div class="form-group row">
+      <label for ="FIO" class = "col-sm-2 col-form-label">ФИО</label>
+      <div class="col-sm-10">
+        <input type="text" id="FIO" class="form-control" placeholder="Фамилия имя отчество" aria-describedby="helpFIO">
+        <small id="helpFIO" class="text-muted">Введите ФИО через пробел</small>
+      </div>
+    </div>
+
+    <div class="form-group row">
+        <label for = "number" class = "col-sm-2 col-form-label">Мобильный телефон</label>
+        <div class="col-sm-10">
+            <input type="text" id="number" class="form-control" placeholder="+7-XXX-XXX-XX-XX" aria-describedby="helpnumber">
+            <small id="helpnumber" class="text-muted">Введите номер телефона слитно без +7 или 8</small>
+   
+        </div>
+    </div>
+          
+    <div class="form-group row">
+        <label for ="Email" class = "col-sm-2 col-form-label">Email</label>
+        <div class="col-sm-10">
+            <input type="text" id="Email" class="form-control" placeholder="name@example.ru">
+        </div>
+    </div>
+             
+    <div class="form-group row">
+        <label for = "data" class = "col-sm-2 col-form-label">Дата рождения</label>
+        <div class="col-sm-10">
+            <input type="date" id="data" class="form-control" placeholder="ДД.ММ.ГГГГ">
+        </div>
+    </div>
+                
+    <div class="form-group row">
+        <label for = "commit" class = "col-sm-2 col-form-label">Комментарий</label>
+        <div class="col-sm-10">
+            <textarea rows ="5" id="comment" class="form-control" placeholder="Введите Комментарий"></textarea>
+        </div>
+    </div>
+    <div class=" row justify-content-center g-recaptcha form-group " data-sitekey="6Lfw55gUAAAAAPP3GHEFuISD-gz-v7528rs0hdMT"></div>
+    <div class ="row justify-content-center">
+        <button type="submit" class=" btn btn-primary col-sm-2 col-form-label" click ="">Отправить</button>
+    </div>
+</form>
+</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+    <script src="bootstrap4/js/bootstrap.min.js"></script>
+</body>
+</html>
