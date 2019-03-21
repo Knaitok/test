@@ -20,7 +20,7 @@ function check_fio($fio){
                 return $fio;
             }else{
                 global $massage; 
-                $massage.= "Значение ФИО:".$fio."указана неверно;<br>";
+                $massage.= "Значение ФИО: ".$fio."указано неверно;<br>";
             }
         }
     }else{
@@ -39,12 +39,12 @@ if(!empty($number)){
     $number = trim($number);
     if(iconv_strlen($number)<11){
         if(!ctype_digit($number)){
-            $massage.="Номер введен неверно;<br>";
+            $massage.="Номер телефона введен неверно;<br>";
         }else{
             $number="8".$number;
         }
     }else{
-        $massage.="Номер введен неверно";
+        $massage.="Номер телефона введен неверно";
     }
 }else{
         $massage.="Введите номер телефона;<br>";
